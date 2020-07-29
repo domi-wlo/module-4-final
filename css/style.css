@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Splash */
+.splash {
+  height: 80vh;
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/09/10/37/light-bulb-1246043_960_720.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  line-height: 1.2;
+  font-family: "Signika", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.page-subtitle {
+  font-size: 36px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 48px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-one {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #f8c291;
+}
+/*# sourceMappingURL=style.css.map */

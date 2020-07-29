@@ -1,0 +1,79 @@
+
+$font-text: 'Montserrat', sans-serif;
+$font-header: 'Signika', sans-serif;
+
+$color-bright: #fff;
+$color-dark: #000;
+$color-one: #0c2461;
+$color-two: #f8c291;
+$color-three: #b71540;
+
+$font-color-dark: #3d3d3d;
+$font-color-bright: $color-bright;
+$font-standard-size: 16px;
+
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+    background: $color-bright;
+    color: $font-color-dark;
+    font-size: $font-standard-size;
+    line-height: 1.7;
+    font-family: $font-text;
+    margin: 0;
+}    
+
+/* Splash */
+
+.splash {
+    height: 80vh;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/09/10/37/light-bulb-1246043_960_720.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 72px;
+    line-height: 1.2;
+    font-family: $font-header;
+    font-weight: 700;
+    color: $color-bright;
+}
+
+.page-subtitle {
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+    color: $color-bright;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 48px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: $font-standard-size;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-one {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    color: $font-color-bright;
+    background-color: $color-two;
+}
+
