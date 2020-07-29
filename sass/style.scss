@@ -1,6 +1,7 @@
 
-$font-text: 'Montserrat', sans-serif;
-$font-header: 'Signika', sans-serif;
+$font-text: 'Roboto', sans-serif;
+$font-header: 'Montserrat', sans-serif;
+$font-special: 'Pacifico', cursive;
 
 $color-bright: #fff;
 $color-dark: #000;
@@ -55,7 +56,40 @@ section {
     background-size: cover;
     display: flex;
     position: relative;
+
+    .container {
+        margin-top: 30px;
+        position: absolute;
+        display: flex;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .banner {
+        display: inline;
+        color: $color-two;
+        font-family: $font-header;
+        text-shadow: 3px 2px 2px $color-three;
+        font-family: $font-special;
+        
+    }
+        
+
+    .menu-list {
+        color: $color-bright;
+        ul {
+            list-style-type: none;
+        
+            li {
+                display: inline-block;
+                margin-right: 36px;
+            }
+        }
+
+    }
 }
+
+
 
 .splash-inner {
     margin: auto;
