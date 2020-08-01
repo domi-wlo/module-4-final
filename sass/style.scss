@@ -8,6 +8,7 @@ $color-dark: #000;
 $color-one: #0c2461;
 $color-two: #f8c291;
 $color-three: #b71540;
+$color-four: #f2f2f2;
 
 $font-color-dark: #3d3d3d;
 $font-color-bright: $color-bright;
@@ -136,7 +137,7 @@ section {
 }
 
 .service-box {
-    flex: 0 0 33.333%;
+    flex: 33.333%;
     position: relative;
     text-align: center;
     padding: 10px;
@@ -163,6 +164,7 @@ section {
 footer {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
 
     p {
         flex: 0 0 33.333%;
@@ -189,5 +191,62 @@ footer {
             color: $font-color-bright;
             border-radius: 50%;
         }
+    }
+}
+
+/* Gallery */
+
+.portfolio {
+    background-color: $color-four;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .gallery-box {
+        flex: 0 0 33.33%;
+        min-height: 330px;
+        margin-bottom: 96px;
+        flex-direction: column;
+
+        .gallery-image {
+            min-width: 330px;
+            height: 100%;
+            padding: 0 0 20px 0;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 250px;
+                height: 100%;
+                object-fit: cover;
+                align-self: center;
+            }
+
+            .gallery-description {
+                padding-left: 20px;
+                text-align: center;
+    
+                h2 {
+                    margin:0;
+                }
+    
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .services-list {
+        flex-direction: column;
+    }
+
+    .page-title .page-subtitle {
+        font-size: 24px;
     }
 }

@@ -122,8 +122,8 @@ section {
 }
 
 .service-box {
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
+  -ms-flex: 33.333%;
+      flex: 33.333%;
   position: relative;
   text-align: center;
   padding: 10px;
@@ -150,6 +150,7 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 footer p {
@@ -178,5 +179,70 @@ footer ul i {
   height: 40px;
   color: #fff;
   border-radius: 50%;
+}
+
+/* Gallery */
+.portfolio {
+  background-color: #f2f2f2;
+}
+
+.gallery {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery .gallery-box {
+  -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+  min-height: 330px;
+  margin-bottom: 96px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.gallery .gallery-box .gallery-image {
+  min-width: 330px;
+  height: 100%;
+  padding: 0 0 20px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.gallery .gallery-box .gallery-image img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gallery .gallery-box .gallery-image .gallery-description {
+  padding-left: 20px;
+  text-align: center;
+}
+
+.gallery .gallery-box .gallery-image .gallery-description h2 {
+  margin: 0;
+}
+
+.gallery .gallery-box .gallery-image .gallery-description p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .services-list {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .page-title .page-subtitle {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
